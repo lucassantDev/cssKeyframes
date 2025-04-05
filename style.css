@@ -94,9 +94,13 @@ main{
 @keyframes up-up{
     0%, 100%{
         margin-top: 0;
+        border-radius: 20%;
+        transition: 4s ease-in-out;
     }
     25%, 27%{
-        margin-top: -30px;
+        margin-top: -50px;
+        border-radius: 100%;
+        transition: 4s ease-in-out;     
     }
 }
 
@@ -110,6 +114,6 @@ main{
     justify-content: center;
     background-color: #0f2897;
     animation-name: up-up;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
 }
