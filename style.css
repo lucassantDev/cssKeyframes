@@ -16,7 +16,7 @@ main{
 .animacao-css{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .centralizar-css{
@@ -116,4 +116,38 @@ main{
     animation-name: up-up;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
+}
+
+@keyframes hello{
+    0%, 100%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+}
+
+@keyframes writing{
+    0%, 100%{
+        transform: rotate(15deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+}
+
+.emoji{
+    scale: 0.4;
+    animation-name: hello;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    /* border: 1px solid red; */
+}
+
+.emoji-written{
+    scale: 0.4;
+    animation-name: writing;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    /* border: 1px solid red; */
 }
